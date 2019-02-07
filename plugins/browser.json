@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.piru.vidauru"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.piru.vidauru"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.piru.vidauru"
+        }
+    },
+    "dependent_plugins": {}
+}
