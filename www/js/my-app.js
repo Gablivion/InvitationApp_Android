@@ -210,4 +210,12 @@ var app = new Framework7({
   function location_pop(){
     myPhotoBrowserPopup4.open();
   }
+
+
+
+  function main_course(){
+    myPhotoBrowserPopup.open();
+  }
+  
+  
   
