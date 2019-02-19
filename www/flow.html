@@ -1,167 +1,149 @@
-<body class = "theme-dark">
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>DEBUT</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/Framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+      .page-content{
+        background-color: #f5d5a2
+      }
+      .timeline-item-inner{
+        background-color: #f5d5a2
+      }
+    </style>
+
+  </head>
+  <body>
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
       <div class="statusbar"></div>
 
       <!-- Your main view, should have "view-main" class -->
+      
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
-
-          <!-- Top Navbar -->
-          <div class="navbar">
-          
-            <div class="navbar-inner">
-              <div class ="left">
-                  <a href="#" class="link back">
-                      <i class="icon icon-back"></i>
-                      <span class="ios-only">Back</span>
-                  </a>
-                    
-              </div>
-              <div class="title" id = "title_header">Flow</div>
-          </div>
-
-          <br /><br /><br />
-
-          <div class="card">            
-          <div align ="center "class="card">
-            <div class ="card-footer">
-              <div class="title">
-                <p>Program Flow</p>
-                <!-- Link to another page <button  data-popup=".pops-popup" class="popup-open button button-round button-outline">Outline</button> -->
-            </div>
-          </div>
-        </div>
         
-        <div class = "page-content ">
-            <div class = "timeline card">
+        <div data-name="home" class="page" style= "background-color: #26abff">
 
-                <div class="timeline-item">
-                    <div class="timeline-item-date">4:30<small>PM</small></div>
-                    <div class="timeline-item-divider"></div>
-                    <div class="timeline-item-content card">
-                      <div class="card-content card-content-padding">Cocktail</div>
-                    </div>
-                  </div>
+            <div class="navbar" style= "background-color: #26abff">
+                <div class="navbar-inner"style= "background-color: #26abff">
+                  <div class="left">
+                      <a class="link back">
+                          <i class="icon icon-back"></i>
+                          <span class="ios-only"> <p style="color: white">Back </p> </span>
+                      </a>
+                </div>
+                <div class="title">
+                    <p  style="color: white">Program Flow</p>
+                    <!-- Link to another page -->
+                </div>
+              </div>
+            </div>  
 
-                  <div class="timeline-item">
-                      <div class="timeline-item-date">5:00<small>PM</small></div>
-                      <div class="timeline-item-divider"></div>
-                      <div class="timeline-item-content card">
-                        <div class="card-content card-content-padding">
-                          Welcome Remarks <br />
-                          Debutant's Grand Entrance <br />
-                          Intermission Number (Fire Dance)<br />
-                          Games <br />
-                        </div>
-                        <div class="card-footer"> 
-                            <a href="#" data-popup=".my-popup" class="popup-open item-link item-content">Click for more Information</a>
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <div class="timeline-item">
-                    <div class="timeline-item-date">6:00<small>PM</small></div>
-                    <div class="timeline-item-divider"></div>
-                    <div class="timeline-item-content card">
-                      <div class="card-content card-content-padding">Dinner</div>
-                      <div class="card-footer"> 
-                          <a href="#" data-popup=".my-popup" class="popup-open item-link item-content">Click for the Menu</a>
-                        </div>
-                    </div>
-                  </div>
+      
 
-                <div class="timeline-item">
-                  <div class="timeline-item-date">7:00<small>PM</small></div>
-                  <div class="timeline-item-divider"></div>
-                  <div class="timeline-item-content card">
-                      <div class="card-content card-content-padding">
-                          18 Roses <br />
-                          18 Candles <br />
-                          18 Treasures <br />
-                        </div>
-                    <div class="card-footer">Click for more Information</div>
+          <!-- Scrollable page content -->
+          <div class="page-content" style="background-image:url(images/bg/index.jpg); background-size:cover; background-repeat:no-repeat;">
+
+            
+            <!-- Timeline -->
+            <div class="timeline" style="align-content:center" ></div>
+              <!-- Timeline item -->
+              <div class="timeline-item">
+                <div class="timeline-item-time">4:30<small>PM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner"><b>Cocktail</b></div>
+                </div>
+              </div>
+              <!-- Timeline item -->
+              <div class="timeline-item">
+                <div class="timeline-item-time">5:00<small>PM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">    
+                    <b>  
+                    Welcome Remarks <br /><br />
+                    Debutant's Grand Entrance <br /><br />
+                    Intermission Number<br /> (Fire Dance)<br /><br />
+                    Games <br />
+                    </b>
                   </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-item-date">8:00<small>PM</small></div>
-                    <div class="timeline-item-divider"></div>
-                    <div class="timeline-item-content card">
-                        <div class="card-content card-content-padding">
-                            Games <br />
-                            Intermission Number (Singing Performance)<br />
-                          </div>
-                      <div class="card-footer">Click for more Information</div>
-                    </div>
-                  </div>
-
-                  <div class="timeline-item">
-                      <div class="timeline-item-date">8:30<small>PM</small></div>
-                      <div class="timeline-item-divider"></div>
-                      <div class="timeline-item-content card">
-                          <div class="card-content card-content-padding">
-                              Parent's Speech <br />
-                              Toast of Honor <br />
-                              Solo Performance <br />
-                            </div>
-                        <div class="card-footer">Click for more Information</div>
-                      </div>
-                    </div>
-
-                <div class="timeline-item">
-                  <div class="timeline-item-date">9:00<small>PM to </small>10:00<small>PM</small></div>
-                  <div class="timeline-item-divider"></div>
-                  <div class="timeline-item-content card">
-                    <div class="card-content card-content-padding">An hour will be given for dancing and other stuff until the party ends at 10:00PM</div>
-                    <div class="card-footer">Card footer</div>
-                  </div>
               </div>
-            </div>
-
-          </div>
-
-      </div>
-
-
-    </div>
-    <div class="popup pops-popup">
-        <div class="view">
-          <div class="page">
-            <div class="navbar">
-              <div class="navbar-inner">
-                <div class="title">Michael Jackson</div>
-                <div class="right">
-                  <!-- Link to close popup -->
-                  <a class="link popup-close">Close</a>
+              <!-- Timeline item -->
+              <div class="timeline-item">
+                <div class="timeline-item-time">6:00<small>PM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">
+                      <a href="/roses/">
+                        <b>18 Roses<br /><br />
+                        18 Candles <br /><br />
+                        18 Treasures <br /><br /></b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline item -->
+              <div class="timeline-item">
+                <div class="timeline-item-time">7:00<small>PM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">
+                  <b>
+                   Games <br /><br />
+                   Intermission Number <br />(Singing Performance)<br />
+                  </b>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline item -->
+              <div class="timeline-item">
+                <div class="timeline-item-time">8:00<small>PM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">
+                    <b>
+                      Parent's Speech <br /><br />
+                      Toast of Honor <br /><br />
+                      Solo Performance <br /><br />
+                    </b>
+                  </div>
+                </div>
+              </div>
+              <!-- Timeline item -->
+              <div class="timeline-item">
+                <div class="timeline-item-time">9:00<small>PM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content">
+                  <div class="timeline-item-inner">
+                      <b>Dancing</b> <br /><br />
+                      An hour will be given for dancing and other stuff until the party ends at 10:00PM
+                  </div>
                 </div>
               </div>
             </div>
-            <div class ="page-content">
-          <div class="card"> 
-            <div class="">
-              <div align="center" class="title"> <img src="images/celebrant.jpg" width="300"/></div>
-            </div>
-          </div>
-          <div class ="card-footer"> 
-            Daniel Jane Quiroga
+
           </div>
         </div>
-          </div>
-        </div>  
       </div>
-
-
-
-
-
-
+    </div>
     <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="lib/Framework7/js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-
   </body>
 </html>

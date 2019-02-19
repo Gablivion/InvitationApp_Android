@@ -14,7 +14,7 @@
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body class ="theme-dark">
+  <body>
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
@@ -24,116 +24,110 @@
       <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
         <div data-name="home" class="page">
+          
+        <div style="background-image:url(images/bg/index.jpg); background-size:cover; background-repeat:no-repeat; width:100%; height:100%;">
+            <div class ="page-content" align="center" style ="width:100%; height:100%;">
+                
+                <a href="#" data-popup=".celeb-popup" class="popup-open item-link item-content"><img src="images/button/celeb.png" width="250"></a><br />
+                <a href="/flow/"><img src="images/button/program.png" width="250"><br />
+                <a href="/roses/"><img src="images/button/prec.png" width="250"></a><br />
+                <a href="/location/"><img src="images/button/location.png" width="250"> </a><br />
+                <a href="/food/"><img src="images/button/food.png" width="250"></a><br />
+                <a href="/clothing/"><img src="images/button/clothing.png" width="250"></a> <br />
+                <a href="#" data-popup=".inv-popup" class="popup-open item-link item-content"><img src="images/button/invitation.png" width="250"></a><br />
 
-          <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title" id = "title_header">Daniela Jane Quiroga's 18th Birthday</div>
             </div>
           </div>
 
-          <!-- Scrollable page content -->
-          <!-- DIRI SUGOD -->
-          <div class="page-content">
-            
 
-                <!-- Buttons -->
-                            <div class="list media-list">   
-                              <ul> 
 
-                                <li>
-                                  <a href="/celebrant/" class="item-link item-content">         
-                                    <div class="item-media"> <img src="images/icons/girl.png" width="80"/> </div>
-                                    <div class="item-inner">
-                                      <div class="item-title-row">
-                                        <div class="item-title">Celebrant</div>
-                                        <div class="item-after"></div>
-                                      </div>
-                                      <div class="item-subtitle">Who's the Celebrant</div>
-                                      <div class="item-text"></div>
-                                    </div>    
-                                  </a>
-                                </li>
-                               
-                              <li>
-                                  <a href="/flow/" class="item-link item-content"> 
-                                    <div class="item-media"> <img src="images/icons/plan.png" width="80"/> </div>
-                                    <div class="item-inner">
-                                      <div class="item-title-row">
-                                        <div class="item-title">Program</div>
-                                        <div class="item-after"></div>
-                                      </div>
-                                      <div class="item-subtitle">Program flow</div>
-                                      <div class="item-text"></div>
-                                    </div>    
-                                  </a>
-                                </li>
-
-                              <li>
-                                  <a href="/roses/" class="item-link item-content">      
-                                    <div class="item-media"> <img src="images/icons/roses.png" width="80"/> </div>
-                                    <div class="item-inner">
-                                      <div class="item-title-row">
-                                        <div class="item-title">Roses</div>
-                                        <div class="item-after"></div>
-                                      </div>
-                                      <div class="item-subtitle">18 roses</div>
-                                      <div class="item-text"></div>
-                                    </div>    
-                                  </a>
-                                </li>
-
-                                <li>
-                                  <a href="/location/" class="item-link item-content">      
-                                    <div class="item-media"> <img src="images/icons/loc.png" width="80"/> </div>
-                                    <div class="item-inner">
-                                      <div class="item-title-row">
-                                        <div class="item-title">Location</div>
-                                        <div class="item-after"></div>
-                                      </div>
-                                      <div class="item-subtitle">Location</div>
-                                      <div class="item-text"></div>
-                                    </div>    
-                                  </a>
-                                </li>
-
-                                <li>
-                                  <a href="/food/" class="item-link item-content">      
-                                    <div class="item-media"> <img src="images/icons/food.png" width="80"/> </div>
-                                    <div class="item-inner">
-                                      <div class="item-title-row">
-                                        <div class="item-title">Food</div>
-                                        <div class="item-after"></div>
-                                      </div>
-                                      <div class="item-subtitle">Food</div>
-                                      <div class="item-text"></div>
-                                    </div>    
-                                  </a>
-                                </li>
-
-                                <li>
-                                  <a href="/clothing/" class="item-link item-content">      
-                                    <div class="item-media"> <img src="images/icons/clothing.png" width="80"/> </div>
-                                    <div class="item-inner">
-                                      <div class="item-title-row">
-                                        <div class="item-title">Clothing</div>
-                                        <div class="item-after"></div>
-                                      </div>
-                                      <div class="item-subtitle">Clothing</div>
-                                      <div class="item-text"></div>
-                                    </div>    
-                                  </a>
-                                </li>
-                              </ul>
+          <div class="popup celeb-popup">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar" style="background-color: #3e81c8">
+                       <div align="center" class ="navbar-inner" style="background-color: #3e81c8">
+                            <div class="title center" style="color: white">
+                                Birthday Celebrant
+                             </div>
+                            <div class="right">
+                                <a class="link popup-close">
+                                    <img src="images/icons/close.png" width="30" height="30">
+                                </a>
                             </div>
+                        </div>
+                      </div>  
+                        <div class ="page-content" style="background-image:url(images/bg/index.jpg); background-size:cover; background-repeat:no-repeat;">
+                            <br />
+                                <div align="center">
+                                    <img src="images/cel.png" width="300" style =" justify-content: center">
+                                </div>
+                                <div class="card">
+                                    <div align="center" class ="card-footer" style="color:white;background-color: #3e81c8; justify-content: center">
+                                        <h2>Daniel Jane Quiroga</h2>
+                                    </div>
+                                </div>
+                        </div>
+                               
+                       
+                </div>
 
-        </div>
+                <div class="popup inv-popup">
+                    <div class="view">
+                        <div class="page">
+                            <div class="navbar" style="background-color: #ff4040">
+                                <div align="center" class ="navbar-inner" style="background-color: #ff4040">
+                                     <div class="title center" style="color: white">
+                                         Invitation
+                                      </div>
+                                     <div class="right">
+                                         <a class="link popup-close">
+                                             <img src="images/icons/close.png" width="30" height="30">
+                                         </a>
+                                     </div>
+                                 </div>
+                               </div>  
+
+                               <div class ="page-content">
+                                  <img src="images/bg/INV.jpg" width="100%" height="100%">
+                              </div>
+                        </div> 
+                    </div>
+                </div>
+
+
+                
+                
+            </div>  
+          </div>
+
       </div>
+      
+     
+
+        
     </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-
   </body>
 </html>
+
+
+<!-- 
+
+
+ <a href="#" data-popup=".my-popup" class="popup-open item-link item-content">         
+                                    <div class="item-media"> <img src="images/dag.jpg" width="80"/> </div>
+                                    <div class="item-inner">
+                                      <div class="item-title-row">
+                                        <div class="item-title">Re</div>
+                                        <div class="item-after"></div>
+                                      </div>
+                                      <div class="item-subtitle">Student</div>
+                                      <div class="item-text"></div>
+                                    </div>    
+                                  </a>
+
+-->
+

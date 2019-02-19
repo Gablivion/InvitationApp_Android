@@ -5,12 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
+	
     <!-- Color theme for statusbar -->
     <meta name="theme-color" content="#2196f3">
+	
     <!-- Your app title -->
     <title>My App</title>
+	
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -18,86 +22,283 @@
   <body>
     <!-- App root element -->
     <div id="app">
-      <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
+	
+    <!-- Statusbar overlay -->
+    <div class="statusbar"></div>
 
-      <!-- Your main view, should have "view-main" class -->
+    <!-- Your main view, should have "view-main" class -->
     <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
+	
+    <!-- Initial Page, "data-name" contains page name -->
         <div data-name="home" class="page">
 
           <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="left">
+          <div class="navbar" style= "background-color: #b0ce6f">
+            <div class="navbar-inner" style= "background-color: #b0ce6f">
+              <div class="left" style= "background-color: #b0ce6f">
                   <a class="link back">
                       <i class="icon icon-back"></i>
-                      <span class="ios-only">Back</span>
+                      <span class="ios-only"> <p style= "color: white">Back </p> </span>
                   </a>
             </div>
             <div class="title">
-                <p>Food Menu</p>
+                    <p style= "color:white">Food Menu</p>
                 <!-- Link to another page -->
             </div>
           </div>
-        </div>
-
-          <!-- Toolbar -->
-          <div class="toolbar">
+        </div>     
+        <div class="toolbar tabbar" style= "background-color: #f5d5a2">
             <div class="toolbar-inner">
-              <!-- Toolbar links -->
-              <!--<a href="#" class="link">Link 1</a>
-              <a href="#" class="link">Link 2</a>-->
+                <a href="#tab-1" class="tab-link tab-link-active"><img src="images/icons/turkey.png" width="20" height="20"/><small>Main Course</small></a>
+                <a href="#tab-2" class="tab-link"><img src="images/icons/wpozza.png" width="20" height="20"/><small>Same Dish</small></a>
+                <a href="#tab-3" class="tab-link"><img src="images/icons/salad.png" width="20" height="20"/><small>Appetizer</small></a>
+                <a href="#tab-4" class="tab-link"><img src="images/icons/drink.png" width="20" height="20"/><small>Drinks</small></a>
             </div>
-          </div>
-
+        </div>
+       
           <!-- Scrollable page content -->
           <!-- DIRI SUGOD -->
-			<div class="page-content">
-				<div class="list inset">
-				  <ul>
-					<li>
-					  <a href="#" onclick="main_course()" class="item-link list-button">Main Course</a>
-					</li>
-					<li>
-					  <a href="#" onclick="side_dish()" class="item-link list-button">Side Dish</a>
-					</li>
-					<li>
-					  <a href="#" onclick="dessert_food()" class="item-link list-button">Dessert</a>
-					</li>
-					<li>
-					  <a href="#" onclick="drink_cocktail()" class="item-link list-button">Drinks/Cocktail</a>
-					</li>
-				  </ul>
-				</div>
-			</div>
-			<!--END / START WITH POPUP -->
-			<div class="popup my-popup">
-                <div class="view">
-                    <div class="page">
-                        <div class="navbar">
-                            <div class="navbar-inner">
-                                <div class="title">Lechon</div>
-                                <div class="right">   
-                                    <a class="link popup-close">Close</a>
-                                </div>
+			<div class="page" style= "background-color: #f5d5a2">
+				
+					<!--Dapat sa Taas ang ToolBar -->
+				
+									
+                    <div class="tabs-animated-wrap" style= "background-color: #f5d5a2">
+                        <div class="tabs">
+                            <div id="tab-1" class="page-content tab tab-active">
+                            <div class="block">
+							
+                                <div class="list accordion-list" style="width:100%; height: 100%">
+                                            <ul>
+                                                <li class="accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                            <div class="item-title" ><img src="images/icons/pork.png" width="20" height="20"/> &nbsp; Lechon </div>
+                                                        </div>
+                                                    </a>
+                                                    <div align = "center" class="accordion-item-content"><img src="images/food/lechon.jpg" height="300" width="500" /><br />Indulge the crispiness and juiciness of Cebu Lechon</div>
+                                                </li>
+
+                                                <li class="accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                            <div class="item-title" ><img src="images/icons/pork.png" width="20" height="20"/> &nbsp; Pork Hamonado</div>
+                                                        </div>
+                                                    </a>
+                                                    <div align = "center" class="accordion-item-content"><img src="images/food/pork.jpg" height = "300" width="500" /> <br />Pork Hamonado with pork belly braised in pineapple juice and soy sauce for the ultimate pork dish. Melt-in-your-mouth tender with a sweet and savory sauce, it is pure heaven on steamed rice</div>
+                                                </li>
+
+                                                <li class="accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                            <div class="item-title" ><img src="images/icons/shrimp.png" width="20" height="20"/> &nbsp; Salt and Pepper Shrimp</div>
+                                                        </div>
+                                                    </a>
+                                                    <div align = "center" class="accordion-item-content"><img src="images/food/prawn.jpg" height="300" width="500" /> <br />This salt and pepper shrimp recipe is a Cantonese dish. It may be simple but it tastes delicious</div>
+                                                </li>
+
+                                                <li class="accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                            <div class="item-title"><img src="images/icons/fish.png" width="20" height="20"/> &nbsp; Tuna Steak</div>
+                                                        </div>
+                                                    </a>
+                                                    <div align = "center" class="accordion-item-content"><img src="images/food/tuna.jpg" height="300" width="500" /> <br /> This mixture of orange juice, soy sauce and garlic with sesame seed makes a wonderful marinade for tuna</div>
+                                                </li>
+
+                                                <li class="accordion-item">
+                                                    <a href="#" class="item-link item-content">
+                                                        <div class="item-inner">
+                                                             <div class="item-title" ><img src="images/icons/chicken.png" width="20" height="20"/> &nbsp; Chicken Cordon Bleu</div>
+                                                        </div>
+                                                    </a>
+                                                    <div align = "center" class="accordion-item-content"><img src="images/food/cordon.jpg" height="300" width="500" /> <br /> &nbsp; This Chicken Cordon Bleu is the perfect dinner.  The Parmesan Dijon Sauce is absolutely heavenly and will leave you awe</div>
+                                                </li>                                        
+                                            </ul>
+                                    </div>
                             </div>
-                        </div>
-						
-                        <div class ="page-content">
-                            <div class="card"> 
-                            <div class="">
-                            <div align="center" class="title"> <img src="images/food/lechon.jpg" width="300" height="280"/></div>
+                            </div>
+							
+							
+							<div id="tab-2" class="page-content tab">
+                            <div class="block">
+                                    <div class="list accordion-list">
+                                            <ul>
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/icons/pork.png" width="20" height="20"/> &nbsp;Ham and Pineapple Kebab</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/ham.jpg" height="350" width="500" /> <br />Hap and Pineapple in Kebab Style</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/icons/pizza.png" width="20" height="20"/> &nbsp;Mini Pizza</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/pizza.jpg" height="350" width="500" /> <br />Filled with ham,cheese and mushroom on top</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/icons/fish.png" width="20" height="20"/> &nbsp;Mediterranean Tuna Salad</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/salad.jpg" height="350" width="500" /> <br />Healthy tuna salad recipe prepared the Mediterranean way. This mayo free tuna salad boasts tons of texture and fresh Mediterranean flavors. A zesty Dijon vinaigrette pulls it all together</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/icons/chicken.png" width="20" height="20"/> &nbsp;Fresh Chicken Wrap</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/torts.jpg" height="350" width="500" /> <br />A gourmet wrap filled with white cheese, kiri cheese, carrots, cucumber, lettece, and slice ham of chicken</div>
+                                                    </li>
+                                                </ul>
+                                    </div>
+									
+									
+									
+									
                             </div>
                             </div>
-                            <div class ="card-footer">Indulge the crispiness and juiciness of Cebu Lechon.</div>
+							
+                            <div id="tab-3" class="page-content tab">
+                            <div class="block">
+                                    <div class="list accordion-list">
+                                            <ul>
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/icons/cake.png" width="20" height="20"/> &nbsp;Cake</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/cake.jpg" width="300" width="500"/> <br />A beach-theme cake for our lovely debutant</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/icons/cookie.png" width="20" height="20"/> &nbsp;Cookies</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/cookies.jpg" width="300" width="500"/> <br />Enjoy beach-theme cookie and it comes with different designs</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title" ><img src="images/icons/crab.png" width="20" height="20"/> &nbsp;Crabcake</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/crabcake.jpg" width="300" width="500"/> <br />Low carb and gluten free crab cakes are made with almond flour instead of breadcrumbs. They are wonderfully crispy and delicious</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/icons/cupcake.png" width="20" height="20"/> &nbsp;Cupcake</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/cupcake.jpg" width="300" width="500"/> <br />Cupcakes are a cutest dessert to bring to the beach -- they keep well and you do not need any silverware. Turn a plain old beach day into an event with these fun cupcakes</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title" ><img src="images/icons/halo.png" width="20" height="20"/> &nbsp;Halo-Halo</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/halo.jpg" width="300" width="500"/> <br />Halo-Halo perfect dessert to bring to the beach</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                    <div class="item-title" ><img src="images/icons/watmel.png" width="20" height="20"/> &nbsp;Pizza Fruit</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/pizzafruit.jpg" width="300" width="500"/> <br />A healthy dessert "pizza" recipes topped off with yogurt and fresh fruit</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                               <div class="item-title" ><img src="images/icons/star.png" width="20" height="20"/> &nbsp;Starwiches</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/star.jpg" width="300" width="500"/> <br />Sandwich shaped into Star to bring the essence of beach</div>
+                                                    </li>                                                 
+                                                </ul>
+                                    </div>
+                            </div>
+                            </div>
+                          						
+							<div id="tab-4" class="page-content tab">
+                            <div class="block">
+                                    <div class="list accordion-list">
+                                            <ul>
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title" ><img src="images/icons/drinks.png" width="20" height="20"/> &nbsp; Blue Dawn</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/blue.jpg" height="350" width="500" /> <br />Cocktail contains rum, pineapple juice, blue curacao, and gummy sharks for adults</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title" ><img src="images/icons/drinks.png" width="20" height="20"/> &nbsp;Peach Sunset</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/peach.jpg" height="350" width="500" /> <br />A Mixture of Peach and Orange Juice for a different taste for kids</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title" ><img src="images/icons/drinks.png" width="20" height="20"/> &nbsp;Strawberry Iced Tea</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/straw.jpg" height="350" width="500" /> <br />Strawberry Iced Tea Flavor for everyone</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title" ><img src="images/icons/drinks.png" width="20" height="20"/> &nbsp;Strawberry Morning</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/food/teqs.jpg" height="350" width="500" /> <br />Tequila based with cherries and oranges</div>
+                                                    </li>															
+                                                </ul>
+                                    </div>
+									
+									
+									
+									
+                            </div>
+                            </div>
+							
+							
                         </div>
                     </div>
-                </div>  
-            </div>
-    </div>
+                </div>
+			
+			
+			
+		</div>
+	
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+	
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
 

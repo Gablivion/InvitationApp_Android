@@ -216,6 +216,3 @@ var app = new Framework7({
   function main_course(){
     myPhotoBrowserPopup.open();
   }
-  
-  
-  

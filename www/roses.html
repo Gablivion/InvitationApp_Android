@@ -1,597 +1,607 @@
 <!DOCTYPE html>
 <html>
- 
-  <body>
+    
+<body>
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
       <div class="statusbar"></div>
 
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
-          <!-- Top Navbar -->
-          <div class="navbar">
-                <div class="navbar-inner">
-                  <div class="left">
-                      <a class="link back">
-                          <i class="icon icon-back"></i>
-                          <span class="ios-only">Back</span>
-                      </a>
-                </div>
-                <div class="title">
-                    <p>18 Roses</p>
-                    <!-- Link to another page -->
-                </div>
-              </div>
-            </div>
-
-                <div class="page">
-                        <div class="navbar">
-                        <div class="navbar-inner sliding">
-                            <div class="left">
-                            <a href="#" class="link back">
-                                <i class="icon icon-back"></i>
-                                <span class="ios-only">Back</span>
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="home" class="page">
+            <!-- Top Navbar -->
+                <div class="navbar" style= "background-color: #668892">
+                    <div class="navbar-inner"  style= "background-color: #668892">
+                        <div class="left" style= "background-color: #668892">              
+                            <a class="link back">
+                                <i class="icon icon-back"></i>            
+                                <span style= "color:white"class="ios-only">Back</span>          
                             </a>
-                            </div>
-                            <div class="title">Animated Tabs</div>
                         </div>
-                        </div>
-                        <div class="toolbar tabbar toolbar-bottom">
-                        <div class="toolbar-inner">
-                            <a href="#tab-1" class="tab-link tab-link-active"><img src="images/roses/rose.png" width="20" height="20"/> ROSES</a>
-                            <a href="#tab-2" class="tab-link"><img src="images/candles/candle.png" width="20" height="20"/> CANDLES</a>
-                            <a href="#tab-3" class="tab-link"><img src="images/treasures/treasure.png" width="20" height="20"/> TREASURES</a>
-                        </div>
-                        </div>
-                        <div class="tabs-animated-wrap">
-                        <div class="tabs">
-                            <div id="tab-1" class="page-content tab tab-active">
-                            <div class="block">
-                                    <div class="list accordion-list">
-                                            <ul>
-                                                <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                            <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Rex Ivan Vidaure</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/1.jpg" width="200" /> <br />Celebrant's Cousin (Mother's Side)</div>
-                                                </li>
 
-                                                <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                            <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Ethan Tima-an</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/2.jpg" width="200" /> <br />Celebrant's Cousin (Mother's Side)</div>
-                                                </li>
-
-                                                <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                            <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Karl Johnson</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/3.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                            <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Carlo Escobar</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/4.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                             <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Connor Damaso</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/5.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Ersan Stark</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/6.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                           <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Reymundo San Wa</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/7.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                            <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Jomar Isidro</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/8.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Alfonso Mondragon</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/9.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Isagani Tomochi</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/10.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                 <li class="accordion-item">
-                                                     
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Christian Katoliko</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/11.jpg" width="200" /> <br />Celebrant's Cousin (Father's Side)</div>
-                                                </li>
-
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Arthur Allen</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/12.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                             <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Gregorio Yu</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/13.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                             <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Steve Dalisay</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/14.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                             <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Kyrie Korver</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/15.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                             <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Toni Bubble</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/16.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                             <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Darell Hermano</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/17.jpg" width="200" /> <br />Celebrant's Friend</div>
-                                                </li>
-
-                                                 <li class="accordion-item">
-                                                    <a href="#" class="item-link item-content">
-                                                        <div class="item-inner">
-                                                             <div class="item-title"> <img src="images/roses/rose.png" width="20" height="20"/> &nbsp;Russell Llanes</div>
-                                                        </div>
-                                                    </a>
-                                                    <div align = "center" class="accordion-item-content"><img src="images/roses/18.jpg" width="200" /> <br />Celebrant's Cousin (Father's Side)</div>
-                                                </li>
-
-                                            </ul>
-                                    </div>
-                            </div>
-                            </div>
-                            <div id="tab-2" class="page-content tab">
-                            <div class="block">
-                                    <div class="list accordion-list">
-                                            <ul>
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Thea Lea Lee</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g1.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Jenny Maligad</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g2.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Rose Marie Fanon</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g3.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Patricia Moto</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g4.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Brea Samantha Ong</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g5.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Mandy Grande</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g6.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                               <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Sheilah Armister</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g7.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Consuela Doncic</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g8.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Kelly Williamson</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g9.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Leisha Ballard</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g10.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                         
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Adrianne Linderman</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g11.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Jessa Tin Rapple</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g12.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Myrtle Mussio</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g13.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Annie Baron</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g14.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Judy Ann Houston</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g15.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Sofia Harrelson</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g16.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Emma Finn</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g17.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"> <img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Julianne Marie Tang </div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/candles/g18.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
-                                                    </li>
-    
-                                                </ul>
-                                    </div>
-                            </div>
-                            </div>
-                            <div id="tab-3" class="page-content tab">
-                            <div class="block">
-                                    <div class="list accordion-list">
-                                            <ul>
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Aldous Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t1.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Chrisopher Diamante</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t2.jpg" width="200" /> <br />Celebrant's Uncle (Mother's Side)</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Corbin Santos</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t3.jpg" width="200" /> <br />Family Friend</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Jacob Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t4.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
-                                                    </li>
-    
-                                                    <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Alpha Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t5.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Franco Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t6.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                               <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Leomord Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t7.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
-                                                    </li>
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Matthew Santos</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t8.jpg" width="200" /> <br />Family Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Tiago Diamante</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t9.jpg" width="200" /> <br />Celebrant's Uncle (Mother's Side)</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Dionisia Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t10.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                         
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Brisa Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t11.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Alena Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t12.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Nicole Quiroga</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t13.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Gloria Santos</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t14.jpg" width="200" /> <br />Family Friend</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Alexa Diamante</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t15.jpg" width="200" /> <br />Celebrant's Aunt (Mother's Side)</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Belma Santos</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t16.jpg" width="200" /> <br />Family Friend</div>
-                                                    </li>
-    
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Susan Santos</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t17.jpg" width="200" /> <br />Family Friend</div>
-                                                    </li>
-    
-                                                     <li class="accordion-item">
-                                                        <a href="#" class="item-link item-content">
-                                                            <div class="item-inner">
-                                                                 <div class="item-title"> <img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Melany Santos</div>
-                                                            </div>
-                                                        </a>
-                                                        <div align = "center" class="accordion-item-content"><img src="images/treasures/t18.png" width="200" /> <br />Family Friend</div>
-                                                    </li>
-    
-                                                </ul>
-                                    </div>
-                            </div>
-                            </div>
+                        <div class="title">
+                            <p style= "color:white">18 Roses</p>
                         </div>
                     </div>
+                    
                 </div>
 
+                <div class="toolbar tabbar toolbar-top" style= "background-color: #f5d5a2">
+                    <div class="toolbar-inner">
+                        <a href="#tab-1" class="tab-link tab-link-active"><img src="images/roses/rose.png" width="20" height="20"/> ROSES</a>
+                        <a href="#tab-2" class="tab-link"><img src="images/candles/candle.png" width="20" height="20"/> CANDLES </a>
+                        <a href="#tab-3" class="tab-link"><img src="images/treasures/treasure.png" width="20" height="20"/> TREASURES </a>
+                     </div>
+                </div>
 
-                          
+                <div class="page"  style="background-image:url(images/bg/index.jpg)">
 
-                            
-                
+                    <div class="tabs-swipeable-wrap">
+                        <div class="tabs">
+                            <div id="tab-1" class="page-content tab tab-active">
+                                <div class="block">
+                                    <div class="list accordion-list ">
 
-                            
-                           
-                         
-        
-            </div>
-        
-        </div>
+                                        <ul>
+                                                <li class="accordion-item" >
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner" >
+                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Rex Ivan Vidaure</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/1.jpg" width="200" /> <br />Celebrant's Cousin (Mother's Side)</div>
+                                                    </li>
     
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Ethan Tima-an</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/2.jpg" width="200" /> <br />Celebrant's Cousin (Mother's Side)</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Karl Johnson</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/3.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Carlo Escobar</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/4.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                    <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Connor Damaso</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/5.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Ersan Stark</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/6.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                               <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Reymundo San Wa</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/7.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Jomar Isidro</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/8.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Alfonso Mondragon</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/9.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Isagani Tomochi</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/10.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                         
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Christian Katoliko</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/11.jpg" width="200" /> <br />Celebrant's Cousin (Father's Side)</div>
+                                                    </li>
+    
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Arthur Allen</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/12.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Gregorio Yu</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/13.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Steve Dalisay</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/14.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Kyrie Korver</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/15.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Toni Bubble</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/16.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title"><img src="images/roses/rose.png" width="20" height="20"/> &nbsp; Darell Hermano</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/17.jpg" width="200" /> <br />Celebrant's Friend</div>
+                                                    </li>
+    
+                                                     <li class="accordion-item">
+                                                        <a href="#" class="item-link item-content">
+                                                            <div class="item-inner">
+                                                                 <div class="item-title"> <img src="images/roses/rose.png" width="20" height="20"/> &nbsp;Russell Llanes</div>
+                                                            </div>
+                                                        </a>
+                                                        <div align = "center" class="accordion-item-content"><img src="images/roses/18.jpg" width="200" /> <br />Celebrant's Cousin (Father's Side)</div>
+                                                    </li>
+                                        </ul>
+                                    </div>   
+                                </div>        
+                            </div>
+                            
+                            <div id="tab-2" class="page-content tab">
+                                    <div class="block">
+                                        <div class="list accordion-list ">
+
+                                                <ul>
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Thea Lea Lee</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g1.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Jenny Maligad</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g2.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Rose Marie Fanon</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g3.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Patricia Moto</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g4.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Brea Samantha Ong</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g5.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Mandy Grande</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g6.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                   <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Sheilah Armister</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g7.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Consuela Doncic</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g8.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Kelly Williamson</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g9.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Leisha Ballard</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g10.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                             
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Adrianne Linderman</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g11.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Jessa Tin Rapple</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g12.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Myrtle Mussio</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g13.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Annie Baron</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g14.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Judy Ann Houston</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g15.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Sofia Harrelson</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g16.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Emma Finn</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g17.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"> <img src="images/candles/candle.png" width="20" width="20"/> &nbsp; Julianne Marie Tang </div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/candles/g18.jpg" width="200" width="200"/> <br />Celebrant's Friend</div>
+                                                        </li>
+        
+                                                    </ul>
+
+
+
+                                        </div>  
+                                    </div>
+                            </div>
+                            
+                            
+                            <div id="tab-3" class="page-content tab">
+                                    <div class="block">
+                                        <div class="list accordion-list ">
+
+                                                <ul>
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Aldous Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t1.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Chrisopher Diamante</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t2.jpg" width="200" /> <br />Celebrant's Uncle (Mother's Side)</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Corbin Santos</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t3.jpg" width="200" /> <br />Family Friend</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Jacob Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t4.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
+                                                        </li>
+        
+                                                        <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Alpha Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t5.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Franco Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t6.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                   <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Leomord Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t7.jpg" width="200" /> <br />Celebrant's Uncle (Father's Side)</div>
+                                                        </li>
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                    <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Matthew Santos</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t8.jpg" width="200" /> <br />Family Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Tiago Diamante</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t9.jpg" width="200" /> <br />Celebrant's Uncle (Mother's Side)</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Dionisia Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t10.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                             
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Brisa Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t11.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                        <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Alena Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t12.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Nicole Quiroga</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t13.jpg" width="200" /> <br />Celebrant's Aunt (Father's Side)</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Gloria Santos</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t14.jpg" width="200" /> <br />Family Friend</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Alexa Diamante</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t15.jpg" width="200" /> <br />Celebrant's Aunt (Mother's Side)</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Belma Santos</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t16.jpg" width="200" /> <br />Family Friend</div>
+                                                        </li>
+        
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"><img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Susan Santos</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t17.jpg" width="200" /> <br />Family Friend</div>
+                                                        </li>
+        
+                                                         <li class="accordion-item">
+                                                            <a href="#" class="item-link item-content">
+                                                                <div class="item-inner">
+                                                                     <div class="item-title"> <img src="images/treasures/treasure.png" width="20" height="20"/> &nbsp; Melany Santos</div>
+                                                                </div>
+                                                            </a>
+                                                            <div align = "center" class="accordion-item-content"><img src="images/treasures/t18.png" width="200" /> <br />Family Friend</div>
+                                                        </li>
+        
+                                                    </ul>
+
+
+                                        </div>  
+                                    </div>
+                            </div>   
+
+
+                        </div>                
+                    </div>
+            
+                            
+                            
+          
+
+                      
+            </div>
+        </div>                                             
     </div>
+</body> 
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <!-- Path to your app js-->
