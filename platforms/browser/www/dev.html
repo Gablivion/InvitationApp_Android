@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+	<link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="theme-dark">
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+            <div class="navbar" style= "background-color: #575f64">
+                <div class="navbar-inner" style= "background-color: #575f64">
+                  <div class="left" style= "background-color: #575f64">
+                      <a class="link back">
+                          <i class="icon icon-back"></i>
+                          <span class="ios-only"> <p style= "color: white">Back </p> </span>
+                      </a>
+                </div>
+                <div class="title">
+                        <p style= "color:white">Developers</p>
+                    <!-- Link to another page -->
+                </div>
+              </div>
+              </div>
+          <div class="page-content" style= "background-color: #f5d5a2"> 
+            <div class="list media-list">
+              <ul>
+
+                
+                  <li>
+                      <a href="#" data-popup=".gab-popup" class="popup-open item-link item-content">
+                        <div class="item-media"><img src="images/gab.jpg" width="100"/></div>
+                        <div class="item-inner">
+                          <div class="item-title-row">
+                            <div class="item-title">Gabriel John Pil</div>
+                          </div>
+                        </div>
+                      </a>
+                  </li>
+
+
+                  <li>
+                      <a href="#" data-popup=".earl-popup" class="popup-open item-link item-content">
+                        <div class="item-media"><img src="images/earl.jpg" width="100"/></div>
+                        <div class="item-inner">
+                          <div class="item-title-row">
+                            <div class="item-title">Earl John Vidaure</div>
+                          </div>
+                        </div>
+                      </a>
+                  </li>
+
+                </ul>
+            </div>
+          </div>
+
+          <div class="popup gab-popup">
+              <div class="view">
+                  <div class="page">
+                      <div class="navbar" style="background-color: #575f64">
+                         <div align="center" class ="navbar-inner" style="background-color:  #575f64">
+                              <div class="title center" style="color: white">
+                                  Gabriel John Pil
+                               </div>
+                              <div class="right">
+                                  <a class="link popup-close">
+                                      <img src="images/icons/close.png" width="30" height="30">
+                                  </a>
+                              </div>
+                          </div>
+                        </div>  
+                          <div class ="page-content" style="background-image:url(images/bg/index.jpg); background-size:cover; background-repeat:no-repeat;">
+                              <br />
+                                  <div align="center">
+                                      <img src="images/gab.jpg" width="300" style =" justify-content: center; border-radius: 50%;">
+                                  </div>
+                                  <div class="card">
+                                      <div align="center" style="color:white;background-color:  #575f64;">
+                                          Accounts: <br />
+                                          <a href ="https://facebook.com/gabrieljohn.pil" class="link external" style ="color:white; "> <img src="images/icons/facebook.png" width="50" height="50"></a>
+                                          <a href ="https://twitter.com/pilosopil" class="link external" > <img src="images/icons/twitter.png" class="link external" width="50" height="50"></a>
+                                      </div>
+                                  </div>
+                          </div>
+                  </div>
+
+              
+          <div class="popup earl-popup">
+              <div class="view">
+                  <div class="page">
+                      <div class="navbar" style="background-color: #575f64">
+                         <div align="center" class ="navbar-inner" style="background-color: #575f64">
+                              <div class="title center" style="color: white">
+                                  Developers
+                               </div>
+                              <div class="right">
+                                  <a class="link popup-close">
+                                      <img src="images/icons/close.png" width="30" height="30">
+                                  </a>
+                              </div>
+                          </div>
+                        </div>  
+                          <div class ="page-content" style="background-image:url(images/bg/index.jpg); background-size:cover; background-repeat:no-repeat;">
+                              <br />
+                                  <div align="center">
+                                      <img src="images/earl.jpg" width="300" style =" justify-content: center; border-radius: 50%;">
+                                  </div>
+                                  <div class="card">
+                                        <div align="center" style="color:white;background-color:  #575f64;">
+                                                Accounts: <br />
+                                                <a href ="https://facebook.com/ejvidaure" class="link external" style ="color:white; "> <img src="images/icons/facebook.png" width="50" height="50"></a>
+                                                <a href ="https://twitter.com/earljohnv" class="link external" > <img src="images/icons/twitter.png" class="link external" width="50" height="50"></a>
+                                        </div>
+                                  </div>
+                          </div>
+                  </div>
+
+            
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

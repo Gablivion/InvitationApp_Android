@@ -12,10 +12,6 @@ var app = new Framework7({
     // Add default routes
     routes: [
       {
-        path: '/celebrant/',
-        url: 'celebrant.html',
-      },
-      {
         path: '/flow/',
         url: 'flow.html',
       },
@@ -31,18 +27,13 @@ var app = new Framework7({
         path: '/food/',
         url: 'food.html',
       },
-
       {
         path: '/location/',
         url: 'location.html',
       },
       {
-        path: '/candle/',
-        url: 'candle.html',
-      },
-      {
-        path: '/treasure/',
-        url: 'treasure.html',
+        path: '/dev/',
+        url: 'dev.html',
       },
     ],
     // ... other parameters
